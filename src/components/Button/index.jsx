@@ -8,8 +8,12 @@ import './index.less'
  * @param {shape} string 按钮形状 circle | radius(默认)
  */
 export default function Button(props) {
-  let { children, onClick, className, type, shape, block } = props
-  return <div className={classnames('xButton', 'ripple', type, shape, block ? 'block' : '', className)} onClick={onClick}>
-    { children }
-  </div>
+  const {
+    children, onClick, className, type, shape, block,
+  } = props
+  return (
+    <div className={classnames('xButton', 'ripple', type, shape, block ? 'block' : '', className)} onClick={onClick}>
+      { children}
+    </div>
+  )
 }

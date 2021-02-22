@@ -8,7 +8,8 @@
     "start": "father doc dev",
     "build": "father build",
     "build:doc": "father doc build",
-    "deploy": "father doc deploy"
+    "deploy": "father doc deploy",
+    "precommit": "lint-staged"
   },
   "files": [
     "dist",
@@ -18,7 +19,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.6",
     "father": "^2.30.1"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix --ext .js,jsx",
+      "prettier --write",
+      "git add"
+    ]
   },
   "module": "es/index.js",
   "browserslist": [
@@ -30,5 +39,18 @@
   "peerDependencies": {
     "react": ">=16.8.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^8.1.1",
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-ali": "^2.0.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^0.14.2",
+    "lint-staged": "^4.0.0",
+    "prettier": "^1.16.4"
+  }
 }
