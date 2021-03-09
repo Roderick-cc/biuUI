@@ -2,8 +2,7 @@
 title: BIU
 order: 10
 hero:
-  # title: Bui-UI
-  title: 好奇的力量
+  title: Bui
   desc: 📖 组件库，创造高效愉悦的工作体验
   actions:
     - text: 快速上手

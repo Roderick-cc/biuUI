@@ -6,7 +6,13 @@
           "title": "Button",
           "path": "/components/button",
           "meta": {},
-          "children": []
+          "children": [
+            {
+              "path": "/components/button",
+              "title": "Index",
+              "meta": {}
+            }
+          ]
         }
       ],
       "/getting-started": [

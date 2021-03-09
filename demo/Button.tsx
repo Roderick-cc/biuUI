@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../src';
+import { Button, FloatLayout } from '../src';
 /**
  * title: Basic Modal
  * title.zh-CN: 基础 Modal
@@ -12,6 +12,10 @@ function ButtonDemo() {
     <div>
       默认：
       <Button>按钮</Button>&nbsp;&nbsp;
+      <Button type="warning">按钮</Button>&nbsp;&nbsp;
+      <Button type="info">按钮</Button>&nbsp;&nbsp;
+      <Button type="default">按钮</Button>&nbsp;&nbsp;
+      <Button type="pure">按钮</Button>&nbsp;&nbsp;
       <Button typeModel="slide" type="slider1">
         按钮
       </Button>
@@ -19,6 +23,12 @@ function ButtonDemo() {
       <Button typeModel="slide" type="slider2">
         按钮
       </Button>
+      <FloatLayout isOpened={true} title={'123123'}>
+        {/* <div style={{ color: '#fff' }}>12312</div> */}
+        这是内容区 随你怎么写这是内容区 随你怎么写这是内容区
+        随你怎么写这是内容区 随你怎么写这是内容区 随你怎么写这是内容区
+        随你怎么写
+      </FloatLayout>
     </div>
   );
 }

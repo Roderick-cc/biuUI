@@ -11,6 +11,8 @@ export function getRoutes() {
       layout: false,
       wrappers: [
         require('/Users/shide/PROJ/biuUI/node_modules/@umijs/preset-dumi/lib/theme/layout')
+          .default,
+        require('/Users/shide/PROJ/biuUI/node_modules/dumi-theme-mobile/src/layouts/demo.tsx')
           .default
       ],
       component: props => {
@@ -27,7 +29,7 @@ export function getRoutes() {
           case 2:
             // render demo with previewer
             return React.createElement(
-              require('dumi-theme-default/src/builtins/Previewer.tsx').default,
+              require('dumi-theme-mobile/src/builtins/Previewer.tsx').default,
               renderArgs[0],
               renderArgs[1]
             );
@@ -48,7 +50,7 @@ export function getRoutes() {
       wrappers: [
         require('/Users/shide/PROJ/biuUI/node_modules/@umijs/preset-dumi/lib/theme/layout')
           .default,
-        require('/Users/shide/PROJ/biuUI/node_modules/dumi-theme-default/src/layout.tsx')
+        require('/Users/shide/PROJ/biuUI/node_modules/dumi-theme-mobile/src/layouts/index.tsx')
           .default
       ],
       routes: [
@@ -59,16 +61,10 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'src/components/Button/index.md',
-            updatedTime: null,
+            updatedTime: 1614320907000,
             componentName: 'Button',
-            title: 'Button',
-            slugs: [
-              {
-                depth: 2,
-                value: 'API文档',
-                heading: 'api文档'
-              }
-            ],
+            slugs: [],
+            title: 'Index',
             nav: {
               path: '/components',
               title: 'Components'
@@ -78,7 +74,7 @@ export function getRoutes() {
               title: 'Button'
             }
           },
-          title: 'Button'
+          title: 'Index'
         },
         {
           path: '/getting-started',
@@ -87,7 +83,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/getting-started.zh-CN.md',
-            updatedTime: null,
+            updatedTime: 1614320907000,
             nav: {
               title: '快速上手',
               order: 1,
@@ -111,7 +107,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/help.md',
-            updatedTime: null,
+            updatedTime: 1614320907000,
             slugs: [],
             title: 'Help',
             nav: {
@@ -128,7 +124,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/help.zh-CN.md',
-            updatedTime: null,
+            updatedTime: 1614320907000,
             nav: {
               title: '帮助',
               path: '/help'
@@ -151,11 +147,11 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/index.md',
-            updatedTime: null,
+            updatedTime: 1614320907000,
             title: 'BIU',
             order: 10,
             hero: {
-              title: '好奇的力量',
+              title: 'Bui',
               desc:
                 '<div class="markdown"><p>📖 组件库，创造高效愉悦的工作体验</p></div>',
               actions: [
@@ -210,7 +206,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/guide/comLibir.md',
-            updatedTime: null,
+            updatedTime: 1614320907000,
             title: '组件总览',
             order: 2,
             toc: 'menu',
@@ -240,7 +236,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/guide/index.md',
-            updatedTime: null,
+            updatedTime: 1614320907000,
             title: '快速上手',
             order: 1,
             toc: false,

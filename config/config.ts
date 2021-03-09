@@ -5,6 +5,7 @@ export default {
   locales: [['zh-CN', '中文']],
   mode: 'site',
   title: 'biuUi-title'
+
   // menus: {
   //   '/guide': [
   //     {
