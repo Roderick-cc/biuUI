@@ -61,7 +61,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'src/components/Button/index.md',
-            updatedTime: 1614320907000,
+            updatedTime: 1615793996000,
             componentName: 'Button',
             title: 'Button',
             slugs: [
@@ -114,7 +114,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/help.zh-CN.md',
-            updatedTime: 1614320907000,
+            updatedTime: 1615793996000,
             nav: {
               title: '帮助',
               order: 3,
@@ -191,14 +191,14 @@ export function getRoutes() {
           title: 'BIU'
         },
         {
-          path: '/guide/com-libir',
-          component: require('/Users/shide/PROJ/biuUI/docs/guide/comLibir.md')
+          path: '/guide/button',
+          component: require('/Users/shide/PROJ/biuUI/docs/guide/Button.md')
             .default,
           exact: true,
           meta: {
-            filePath: 'docs/guide/comLibir.md',
-            updatedTime: 1614320907000,
-            title: '按钮',
+            filePath: 'docs/guide/Button.md',
+            updatedTime: null,
+            title: 'Button 按钮',
             slugs: [
               {
                 depth: 2,
@@ -211,7 +211,35 @@ export function getRoutes() {
               title: 'Guide'
             }
           },
-          title: '按钮'
+          title: 'Button 按钮'
+        },
+        {
+          path: '/guide/curtain',
+          component: require('/Users/shide/PROJ/biuUI/docs/guide/Curtain.md')
+            .default,
+          exact: true,
+          meta: {
+            filePath: 'docs/guide/Curtain.md',
+            updatedTime: null,
+            title: 'Curtain 幕帘',
+            slugs: [
+              {
+                depth: 2,
+                value: 'Modal 模态框',
+                heading: 'modal-模态框'
+              },
+              {
+                depth: 2,
+                value: 'API',
+                heading: 'api'
+              }
+            ],
+            nav: {
+              path: '/guide',
+              title: 'Guide'
+            }
+          },
+          title: 'Curtain 幕帘'
         },
         {
           path: '/guide',
@@ -220,7 +248,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/guide/index.md',
-            updatedTime: 1614320907000,
+            updatedTime: 1615793996000,
             title: '指引',
             order: 2,
             slugs: [

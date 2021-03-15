@@ -41,8 +41,13 @@
           }
         },
         {
-          "path": "/guide/com-libir",
-          "title": "按钮",
+          "path": "/guide/button",
+          "title": "Button 按钮",
+          "meta": {}
+        },
+        {
+          "path": "/guide/curtain",
+          "title": "Curtain 幕帘",
           "meta": {}
         }
       ]
@@ -89,19 +94,13 @@
         {
           "maxWidth": 375,
           "mode": "vw",
-          "options": [
-            100,
-            750
-          ]
+          "options": [100, 750]
         },
         {
           "minWidth": 376,
           "maxWidth": 750,
           "mode": "vw",
-          "options": [
-            100,
-            1500
-          ]
+          "options": [100, 1500]
         }
       ]
     }
