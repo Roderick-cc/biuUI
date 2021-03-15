@@ -63,8 +63,14 @@ export function getRoutes() {
             filePath: 'src/components/Button/index.md',
             updatedTime: 1614320907000,
             componentName: 'Button',
-            slugs: [],
-            title: 'Index',
+            title: 'Button',
+            slugs: [
+              {
+                depth: 2,
+                value: 'API 文档',
+                heading: 'api-文档'
+              }
+            ],
             nav: {
               path: '/components',
               title: 'Components'
@@ -74,7 +80,7 @@ export function getRoutes() {
               title: 'Button'
             }
           },
-          title: 'Index'
+          title: 'Button'
         },
         {
           path: '/getting-started',
@@ -103,22 +109,6 @@ export function getRoutes() {
         },
         {
           path: '/help',
-          component: require('/Users/shide/PROJ/biuUI/docs/help.md').default,
-          exact: true,
-          meta: {
-            filePath: 'docs/help.md',
-            updatedTime: 1614320907000,
-            slugs: [],
-            title: 'Help',
-            nav: {
-              path: '/help',
-              title: '帮助'
-            }
-          },
-          title: 'Help'
-        },
-        {
-          path: '/help',
           component: require('/Users/shide/PROJ/biuUI/docs/help.zh-CN.md')
             .default,
           exact: true,
@@ -127,6 +117,7 @@ export function getRoutes() {
             updatedTime: 1614320907000,
             nav: {
               title: '帮助',
+              order: 3,
               path: '/help'
             },
             slugs: [
@@ -147,7 +138,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/index.md',
-            updatedTime: 1614320907000,
+            updatedTime: 1615260346000,
             title: 'BIU',
             order: 10,
             hero: {
@@ -207,19 +198,12 @@ export function getRoutes() {
           meta: {
             filePath: 'docs/guide/comLibir.md',
             updatedTime: 1614320907000,
-            title: '组件总览',
-            order: 2,
-            toc: 'menu',
+            title: '按钮',
             slugs: [
               {
                 depth: 2,
                 value: 'Button 按钮',
                 heading: 'button-按钮'
-              },
-              {
-                depth: 2,
-                value: '1123123',
-                heading: '1123123'
               }
             ],
             nav: {
@@ -227,7 +211,7 @@ export function getRoutes() {
               title: 'Guide'
             }
           },
-          title: '组件总览'
+          title: '按钮'
         },
         {
           path: '/guide',
@@ -237,19 +221,13 @@ export function getRoutes() {
           meta: {
             filePath: 'docs/guide/index.md',
             updatedTime: 1614320907000,
-            title: '快速上手',
-            order: 1,
-            toc: false,
+            title: '指引',
+            order: 2,
             slugs: [
               {
-                depth: 2,
-                value: '什么是 d',
-                heading: '什么是-d'
-              },
-              {
-                depth: 2,
-                value: '什么是 1231',
-                heading: '什么是-1231'
+                depth: 1,
+                value: 'title: 指南',
+                heading: 'title-指南'
               }
             ],
             nav: {
@@ -257,7 +235,7 @@ export function getRoutes() {
               title: 'Guide'
             }
           },
-          title: '快速上手'
+          title: '指引'
         },
         {
           path: '/components',

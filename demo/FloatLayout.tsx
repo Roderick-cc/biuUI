@@ -12,17 +12,12 @@ function ButtonDemo() {
     <div>
       默认：
       <br />
-      <br />
-      <div>
-        <Button>按钮</Button>&nbsp;&nbsp;
-        <Button type="warning">按钮</Button>&nbsp;&nbsp;
-        <Button type="info">按钮</Button>&nbsp;&nbsp;
-        <Button type="default">按钮</Button>&nbsp;&nbsp;
-        <Button type="pure">按钮</Button>&nbsp;&nbsp;
-      </div>
-      <br />
+      <Button>按钮</Button>&nbsp;&nbsp;
+      <Button type="warning">按钮</Button>&nbsp;&nbsp;
+      <Button type="info">按钮</Button>&nbsp;&nbsp;
+      <Button type="default">按钮</Button>&nbsp;&nbsp;
+      <Button type="pure">按钮</Button>&nbsp;&nbsp;
       <div>PC 悬浮效果</div>
-      <br />
       <div>
         <Button typeModel="slide" type="slider1">
           {' '}

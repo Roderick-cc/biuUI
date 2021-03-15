@@ -6,13 +6,7 @@
           "title": "Button",
           "path": "/components/button",
           "meta": {},
-          "children": [
-            {
-              "path": "/components/button",
-              "title": "Index",
-              "meta": {}
-            }
-          ]
+          "children": []
         }
       ],
       "/getting-started": [
@@ -41,17 +35,15 @@
       "/guide": [
         {
           "path": "/guide",
-          "title": "快速上手",
+          "title": "指引",
           "meta": {
-            "order": 1
+            "order": 2
           }
         },
         {
           "path": "/guide/com-libir",
-          "title": "组件总览",
-          "meta": {
-            "order": 2
-          }
+          "title": "按钮",
+          "meta": {}
         }
       ]
     }
@@ -70,8 +62,9 @@
         "path": "/getting-started"
       },
       {
-        "path": "/help",
-        "title": "帮助"
+        "title": "帮助",
+        "order": 3,
+        "path": "/help"
       },
       {
         "path": "/guide",
@@ -90,5 +83,27 @@
   "repository": {
     "branch": "master"
   },
-  "theme": {}
+  "theme": {
+    "hd": {
+      "rules": [
+        {
+          "maxWidth": 375,
+          "mode": "vw",
+          "options": [
+            100,
+            750
+          ]
+        },
+        {
+          "minWidth": 376,
+          "maxWidth": 750,
+          "mode": "vw",
+          "options": [
+            100,
+            1500
+          ]
+        }
+      ]
+    }
+  }
 }
