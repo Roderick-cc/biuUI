@@ -191,13 +191,41 @@ export function getRoutes() {
           title: 'BIU'
         },
         {
+          path: '/guide/arrow-button',
+          component: require('/Users/shide/PROJ/biuUI/docs/guide/ArrowButton.md')
+            .default,
+          exact: true,
+          meta: {
+            filePath: 'docs/guide/ArrowButton.md',
+            updatedTime: null,
+            title: 'ArrowButton 不规则标签',
+            slugs: [
+              {
+                depth: 2,
+                value: 'Tag 标签',
+                heading: 'tag-标签'
+              },
+              {
+                depth: 2,
+                value: 'API文档',
+                heading: 'api文档'
+              }
+            ],
+            nav: {
+              path: '/guide',
+              title: 'Guide'
+            }
+          },
+          title: 'ArrowButton 不规则标签'
+        },
+        {
           path: '/guide/button',
           component: require('/Users/shide/PROJ/biuUI/docs/guide/Button.md')
             .default,
           exact: true,
           meta: {
             filePath: 'docs/guide/Button.md',
-            updatedTime: null,
+            updatedTime: 1615798841000,
             title: 'Button 按钮',
             slugs: [
               {
@@ -220,7 +248,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/guide/Curtain.md',
-            updatedTime: null,
+            updatedTime: 1615798841000,
             title: 'Curtain 幕帘',
             slugs: [
               {
@@ -242,13 +270,41 @@ export function getRoutes() {
           title: 'Curtain 幕帘'
         },
         {
+          path: '/guide/tag',
+          component: require('/Users/shide/PROJ/biuUI/docs/guide/Tag.md')
+            .default,
+          exact: true,
+          meta: {
+            filePath: 'docs/guide/Tag.md',
+            updatedTime: null,
+            title: 'Tag 标签',
+            slugs: [
+              {
+                depth: 2,
+                value: 'Tag 标签',
+                heading: 'tag-标签'
+              },
+              {
+                depth: 2,
+                value: 'API文档',
+                heading: 'api文档'
+              }
+            ],
+            nav: {
+              path: '/guide',
+              title: 'Guide'
+            }
+          },
+          title: 'Tag 标签'
+        },
+        {
           path: '/guide',
           component: require('/Users/shide/PROJ/biuUI/docs/guide/index.md')
             .default,
           exact: true,
           meta: {
             filePath: 'docs/guide/index.md',
-            updatedTime: 1615793996000,
+            updatedTime: 1615798841000,
             title: '指引',
             order: 2,
             slugs: [
@@ -272,7 +328,7 @@ export function getRoutes() {
           redirect: '/components/button'
         }
       ],
-      title: 'biuUi-title',
+      title: 'biuUi',
       component: props => props.children
     }
   ];
