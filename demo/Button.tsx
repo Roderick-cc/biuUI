@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, FloatLayout } from '../src';
+import { Button } from '../src';
 /**
  * title: Basic Modal
  * title.zh-CN: 基础 Modal

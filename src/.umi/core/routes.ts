@@ -197,7 +197,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/guide/ArrowButton.md',
-            updatedTime: null,
+            updatedTime: 1617088633000,
             title: 'ArrowButton 不规则标签',
             slugs: [
               {
@@ -207,8 +207,8 @@ export function getRoutes() {
               },
               {
                 depth: 2,
-                value: 'API文档',
-                heading: 'api文档'
+                value: 'API 文档',
+                heading: 'api-文档'
               }
             ],
             nav: {
@@ -240,6 +240,29 @@ export function getRoutes() {
             }
           },
           title: 'Button 按钮'
+        },
+        {
+          path: '/guide/countdown',
+          component: require('/Users/shide/PROJ/biuUI/docs/guide/Countdown.md')
+            .default,
+          exact: true,
+          meta: {
+            filePath: 'docs/guide/Countdown.md',
+            updatedTime: null,
+            title: 'Countdown 倒计时',
+            slugs: [
+              {
+                depth: 2,
+                value: 'Countdown 倒计时',
+                heading: 'countdown-倒计时'
+              }
+            ],
+            nav: {
+              path: '/guide',
+              title: 'Guide'
+            }
+          },
+          title: 'Countdown 倒计时'
         },
         {
           path: '/guide/curtain',
@@ -276,7 +299,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/guide/Tag.md',
-            updatedTime: null,
+            updatedTime: 1617088633000,
             title: 'Tag 标签',
             slugs: [
               {
@@ -286,8 +309,8 @@ export function getRoutes() {
               },
               {
                 depth: 2,
-                value: 'API文档',
-                heading: 'api文档'
+                value: 'API 文档',
+                heading: 'api-文档'
               }
             ],
             nav: {
@@ -304,7 +327,7 @@ export function getRoutes() {
           exact: true,
           meta: {
             filePath: 'docs/guide/index.md',
-            updatedTime: 1615798841000,
+            updatedTime: 1617088633000,
             title: '指引',
             order: 2,
             slugs: [

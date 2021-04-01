@@ -51,6 +51,11 @@
           "meta": {}
         },
         {
+          "path": "/guide/countdown",
+          "title": "Countdown 倒计时",
+          "meta": {}
+        },
+        {
           "path": "/guide/curtain",
           "title": "Curtain 幕帘",
           "meta": {}
